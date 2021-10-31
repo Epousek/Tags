@@ -8,9 +8,12 @@ namespace Tags
   class Program
   {
     static Regex findTag = new Regex("<([a-zA-Z]+)>(.+?)</([a-zA-Z]+)>");
+    public static ConsoleColor defaultBackgroundColor;
 
     static void Main(string[] args)
     {
+      defaultBackgroundColor = Console.BackgroundColor;
+
       string argsStr = ReadFromFile(args[0]);
       FindTags(argsStr);
 

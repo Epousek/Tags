@@ -6,9 +6,13 @@ namespace Tags
   {
     public static void Apply(string text)
     {
-      Console.BackgroundColor = ConsoleColor.DarkRed;
+      if (Program.defaultBackgroundColor == ConsoleColor.DarkRed)
+        Console.BackgroundColor = ConsoleColor.DarkYellow;
+      else
+        Console.BackgroundColor = ConsoleColor.DarkRed;
+
       Console.Write(text);
-      Console.BackgroundColor = ConsoleColor.Black;
+      Console.BackgroundColor = Program.defaultBackgroundColor;
     }
   }
 }
