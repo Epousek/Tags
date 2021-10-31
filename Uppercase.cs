@@ -2,13 +2,12 @@
 
 namespace Tags
 {
-  class Yellow
+  static class Uppercase
   {
     public static void Apply(string text)
     {
-      Console.ForegroundColor = ConsoleColor.DarkYellow;
+      text = text.ToUpper();
       Console.Write(text);
-      Console.ForegroundColor = ConsoleColor.White;
     }
   }
 }

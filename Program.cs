@@ -69,7 +69,7 @@ namespace Tags
       Console.Write(args.Substring(lastTagIndex));
     }
 
-    static string FirstCharToUpper(string s)
+    public static string FirstCharToUpper(string s)
       => s switch
       {
         null => throw new ArgumentNullException(),
