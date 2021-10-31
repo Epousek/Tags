@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Tags": {
+      "commandName": "Project",
+      "commandLineArgs": "text.txt"
+    }
+  }
+}
