@@ -12,8 +12,9 @@ namespace Tags
     static void Main(string[] args)
     {
       string argsStr = ReadFromFile(args[0]);
-
       FindTags(argsStr);
+
+      Console.Read();
     }
 
     static string ReadFromFile(string path)
